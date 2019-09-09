@@ -10,4 +10,4 @@ function* addToCart({ id }) {
     yield put(addToCartSuccess(response.data));
 }
 
-export default all([takeLatest('@add/ADD_REQUEST', addToCart)]);
+export default all([takeLatest('@cart/ADD_REQUEST', addToCart)]);
