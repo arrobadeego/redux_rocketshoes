@@ -7,7 +7,7 @@ export function addToCart(product) {
 
 export function removeFromCart(id) {
     return {
-        type: 'REMOVE_FROM_CART',
+        type: '@cart/REMOVE',
         id,
     };
 }

@@ -14,7 +14,7 @@ export default function cart(state = [], action) {
                     draft.push({ ...action.product, amount: 1 });
                 }
             });
-        case 'REMOVE_FROM_CART':
+        case '@cart/REMOVE':
             return produce(state, draft => {
                 const productIndex = draft.findIndex(p => p.id === action.id);
 
